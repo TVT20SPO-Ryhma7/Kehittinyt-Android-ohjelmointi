@@ -9,12 +9,11 @@ import kotlin.random.Random
 @Entity
 data class User(
     // Määritellään pääavaimellinen kenttä, jonka Room-kirjasto määrittelee automaattisesti
-
-    val firstName: String?,
-    // Jos kentän nimen haluaa määrittää itse, lisätään annotaatio: @ColumnInfo(name = "customName")
-    val lastName: String?,
-    val age: Int?
-    ){
     @PrimaryKey(autoGenerate = true)
-    var id: Int = 0
-}
+    val id: Int,
+    val username: String,
+//    val firstName: String?,
+//    // Jos kentän nimen haluaa määrittää itse, lisätään annotaatio: @ColumnInfo(name = "customName")
+//    val lastName: String?,
+//    val age: Int?
+)
