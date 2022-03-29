@@ -6,51 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/databaseView"
-        android:layout_width="409dp"
-        android:layout_height="354dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonAdd"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add"
-        app:layout_constraintEnd_toStartOf="@+id/buttonDelete"
-        app:layout_constraintHorizontal_bias="0.352"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="453dp" />
+        android:orientation="vertical"
+        app:layout_constraintBaseline_toTopOf="parent"
+        android:gravity="center"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/databaseView"
+            android:layout_width="409dp"
+            android:layout_height="354dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextDatabaseQuery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Query"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="384dp" />
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_margin="16dp"
+            />
 
-    <Button
-        android:id="@+id/buttonDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="453dp" />
+        <EditText
+            android:id="@+id/editTextDatabaseQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Query"
+            android:layout_margin="16dp"
+          />
 
-    <TextView
-        android:id="@+id/textViewEventOutput"
-        android:layout_width="203dp"
-        android:layout_height="43dp"
-        android:text="Event Output Log"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="552dp" />
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_margin="16dp"
+   />
+
+        <TextView
+            android:id="@+id/textViewEventOutput"
+            android:layout_width="203dp"
+            android:layout_height="43dp"
+            android:text="Event Output Log"
+            android:layout_margin="16dp"
+     />
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

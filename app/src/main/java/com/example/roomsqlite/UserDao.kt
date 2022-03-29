@@ -22,6 +22,6 @@ interface UserDao {
 
 
     // Esimerkki käännösaikaisesta kyselyn tarkistuksesta:
-    @Query("SELECT * FROM userss")
-    fun getAll(): List<User>
+    //@Query("SELECT * FROM userss")
+    //fun getAll(): List<User>
 }
